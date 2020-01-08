@@ -1,0 +1,559 @@
+@article{10.1023/A:1007379606734,
+ author = {Caruana, Rich},
+ title = {Multitask Learning},
+ year = {1997},
+ issue_date = {July 1997},
+ publisher = {Kluwer Academic Publishers},
+ address = {USA},
+ volume = {28},
+ number = {1},
+ issn = {0885-6125},
+ url = {https://doi.org/10.1023/A:1007379606734},
+ doi = {10.1023/A:1007379606734},
+ journal = {Mach. Learn.},
+ month = jul,
+ pages = {41–75},
+ numpages = {35},
+ keywords = {kernel regression, k-nearest neighbor, supervised learning, parallel transfer, backpropagation, multitask learning, inductive transfer, generalization}
+}
+
+
+
+@inproceedings{10.5555/1596276.1596305,
+ author = {Buchholz, Sabine and Marsi, Erwin},
+ title = {CoNLL-X Shared Task on Multilingual Dependency Parsing},
+ year = {2006},
+ publisher = {Association for Computational Linguistics},
+ address = {USA},
+ booktitle = {Proceedings of the Tenth Conference on Computational Natural Language Learning},
+ pages = {149–164},
+ numpages = {16},
+ location = {New York City, New York},
+ series = {CoNLL-X ’06}
+}
+
+@inproceedings{peng-etal-2017-deep,
+    title = "Deep Multitask Learning for Semantic Dependency Parsing",
+    author = "Peng, Hao  and
+      Thomson, Sam  and
+      Smith, Noah A.",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P17-1186",
+    doi = "10.18653/v1/P17-1186",
+    pages = "2037--2048",
+    abstract = "We present a deep neural architecture that parses sentences into three semantic dependency graph formalisms. By using efficient, nearly arc-factored inference and a bidirectional-LSTM composed with a multi-layer perceptron, our base system is able to significantly improve the state of the art for semantic dependency parsing, without using hand-engineered features or syntax. We then explore two multitask learning approaches{---}one that shares parameters across formalisms, and one that uses higher-order structures to predict the graphs jointly. We find that both approaches improve performance across formalisms on average, achieving a new state of the art. Our code is open-source and available at \url{https://github.com/Noahs-ARK/NeurboParser}.",
+}
+
+@inproceedings{kurtz-etal-2019-improving,
+    title = "Improving Semantic Dependency Parsing with Syntactic Features",
+    author = "Kurtz, Robin  and
+      Roxbo, Daniel  and
+      Kuhlmann, Marco",
+    booktitle = "Proceedings of the First NLPL Workshop on Deep Learning for Natural Language Processing",
+    month = sep,
+    year = "2019",
+    address = "Turku, Finland",
+    publisher = {Link{\"o}ping University Electronic Press},
+    url = "https://www.aclweb.org/anthology/W19-6202",
+    pages = "12--21",
+    abstract = "We extend a state-of-the-art deep neural architecture for semantic dependency parsing with features defined over syntactic dependency trees. Our empirical results show that only gold-standard syntactic information leads to consistent improvements in semantic parsing accuracy, and that the magnitude of these improvements varies with the specific combination of the syntactic and the semantic representation used. In contrast, automatically predicted syntax does not seem to help semantic parsing. Our error analysis suggests that there is a significant overlap between syntactic and semantic representations.",
+}
+
+@mastersthesis{Roxbo1315439,
+   author = {Roxbo, Daniel},
+   institution = {Linköping University, Human-Centered systems},
+   pages = {47},
+   school = {Linköping University, Human-Centered systems},
+   title = {A Detailed Analysis of Semantic Dependency Parsing with Deep Neural Networks},
+   keywords = {Semantic Dependency Parsing, LSTM},
+   abstract = {The use of Long Short Term Memory (LSTM) networks continues to yield better results in natural language processing tasks. One area which recently has seen significant improvements is semantic dependency parsing, where the current state-of-the-art model uses a multilayer LSTM combined with an attention-based scoring function to predict the dependencies. In this thesis the state of the art model is first replicated and then extended to include features based on syntactical trees, which was found to be useful in a similar model. In addition, the effect of part-of-speech tags is studied. The replicated model achieves a labeled F1 score of 93.6 on the in-domain data and 89.2 on the out-of-domain data on the DM dataset, which shows that the model is indeed replicable. Using multiple features extracted from syntactic gold standard trees of the DELPH-IN Derivation Tree (DT) type increased the labeled scores to 97.1 and 94.1 respectively, while the use of predicted trees of the Stanford Basic (SB) type did not improve the results at all. The usefulness of part-of-speech tags was found to be diminished in the presence of other features. },
+   year = {2019}
+}
+
+@proceedings{conll-2017-conll-2017,
+    title = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    editor = "Haji{\v{c}}, Jan  and
+      Zeman, Dan",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3000",
+    doi = "10.18653/v1/K17-3",
+}
+@inproceedings{zeman-etal-2017-conll,
+    title = "{C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    author = {Zeman, Daniel  and
+      Popel, Martin  and
+      Straka, Milan  and
+      Haji{\v{c}}, Jan  and
+      Nivre, Joakim  and
+      Ginter, Filip  and
+      Luotolahti, Juhani  and
+      Pyysalo, Sampo  and
+      Petrov, Slav  and
+      Potthast, Martin  and
+      Tyers, Francis  and
+      Badmaeva, Elena  and
+      Gokirmak, Memduh  and
+      Nedoluzhko, Anna  and
+      Cinkov{\'a}, Silvie  and
+      Haji{\v{c}} jr., Jan  and
+      Hlav{\'a}{\v{c}}ov{\'a}, Jaroslava  and
+      Kettnerov{\'a}, V{\'a}clava  and
+      Ure{\v{s}}ov{\'a}, Zde{\v{n}}ka  and
+      Kanerva, Jenna  and
+      Ojala, Stina  and
+      Missil{\"a}, Anna  and
+      Manning, Christopher D.  and
+      Schuster, Sebastian  and
+      Reddy, Siva  and
+      Taji, Dima  and
+      Habash, Nizar  and
+      Leung, Herman  and
+      de Marneffe, Marie-Catherine  and
+      Sanguinetti, Manuela  and
+      Simi, Maria  and
+      Kanayama, Hiroshi  and
+      de Paiva, Valeria  and
+      Droganova, Kira  and
+      Mart{\'\i}nez Alonso, H{\'e}ctor  and
+      {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i}  and
+      Sulubacak, Umut  and
+      Uszkoreit, Hans  and
+      Macketanz, Vivien  and
+      Burchardt, Aljoscha  and
+      Harris, Kim  and
+      Marheinecke, Katrin  and
+      Rehm, Georg  and
+      Kayadelen, Tolga  and
+      Attia, Mohammed  and
+      Elkahky, Ali  and
+      Yu, Zhuoran  and
+      Pitler, Emily  and
+      Lertpradit, Saran  and
+      Mandl, Michael  and
+      Kirchner, Jesse  and
+      Alcalde, Hector Fernandez  and
+      Strnadov{\'a}, Jana  and
+      Banerjee, Esha  and
+      Manurung, Ruli  and
+      Stella, Antonio  and
+      Shimada, Atsuko  and
+      Kwak, Sookyoung  and
+      Mendon{\c{c}}a, Gustavo  and
+      Lando, Tatiana  and
+      Nitisaroj, Rattima  and
+      Li, Josie},
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3001",
+    doi = "10.18653/v1/K17-3001",
+    pages = "1--19",
+}
+@inproceedings{dozat-etal-2017-stanfords,
+    title = "{S}tanford{'}s Graph-based Neural Dependency Parser at the {C}o{NLL} 2017 Shared Task",
+    author = "Dozat, Timothy  and
+      Qi, Peng  and
+      Manning, Christopher D.",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3002",
+    doi = "10.18653/v1/K17-3002",
+    pages = "20--30",
+}
+@inproceedings{shi-etal-2017-combining,
+    title = "Combining Global Models for Parsing Universal Dependencies",
+    author = "Shi, Tianze  and
+      Wu, Felix G.  and
+      Chen, Xilun  and
+      Cheng, Yao",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3003",
+    doi = "10.18653/v1/K17-3003",
+    pages = "31--39",
+}
+@inproceedings{bjorkelund-etal-2017-ims,
+    title = "{IMS} at the {C}o{NLL} 2017 {UD} Shared Task: {CRF}s and Perceptrons Meet Neural Networks",
+    author = {Bj{\"o}rkelund, Anders  and
+      Falenska, Agnieszka  and
+      Yu, Xiang  and
+      Kuhn, Jonas},
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3004",
+    doi = "10.18653/v1/K17-3004",
+    pages = "40--51",
+}
+@inproceedings{che-etal-2017-hit,
+    title = "The {HIT}-{SCIR} System for End-to-End Parsing of Universal Dependencies",
+    author = "Che, Wanxiang  and
+      Guo, Jiang  and
+      Wang, Yuxuan  and
+      Zheng, Bo  and
+      Zhao, Huaipeng  and
+      Liu, Yang  and
+      Teng, Dechuan  and
+      Liu, Ting",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3005",
+    doi = "10.18653/v1/K17-3005",
+    pages = "52--62",
+}
+@inproceedings{lim-poibeau-2017-system,
+    title = "A System for Multilingual Dependency Parsing based on Bidirectional {LSTM} Feature Representations",
+    author = "Lim, KyungTae  and
+      Poibeau, Thierry",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3006",
+    doi = "10.18653/v1/K17-3006",
+    pages = "63--70",
+}
+@inproceedings{sato-etal-2017-adversarial,
+    title = "Adversarial Training for Cross-Domain Universal Dependency Parsing",
+    author = "Sato, Motoki  and
+      Manabe, Hitoshi  and
+      Noji, Hiroshi  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3007",
+    doi = "10.18653/v1/K17-3007",
+    pages = "71--79",
+}
+@inproceedings{kirnap-etal-2017-parsing,
+    title = "Parsing with Context Embeddings",
+    author = {K{\i}rnap, {\"O}mer  and
+      {\"O}nder, Berkay Furkan  and
+      Yuret, Deniz},
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3008",
+    doi = "10.18653/v1/K17-3008",
+    pages = "80--87",
+}
+@inproceedings{straka-strakova-2017-tokenizing,
+    title = "Tokenizing, {POS} Tagging, Lemmatizing and Parsing {UD} 2.0 with {UDP}ipe",
+    author = "Straka, Milan  and
+      Strakov{\'a}, Jana",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3009",
+    doi = "10.18653/v1/K17-3009",
+    pages = "88--99",
+}
+@inproceedings{vania-etal-2017-uparse,
+    title = "{UP}arse: the {E}dinburgh system for the {C}o{NLL} 2017 {UD} shared task",
+    author = "Vania, Clara  and
+      Zhang, Xingxing  and
+      Lopez, Adam",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3010",
+    doi = "10.18653/v1/K17-3010",
+    pages = "100--110",
+}
+@inproceedings{heinecke-asadullah-2017-multi,
+    title = "Multi-Model and Crosslingual Dependency Analysis",
+    author = "Heinecke, Johannes  and
+      Asadullah, Munshi",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3011",
+    doi = "10.18653/v1/K17-3011",
+    pages = "111--118",
+}
+@inproceedings{kanerva-etal-2017-turkunlp,
+    title = "{T}urku{NLP}: Delexicalized Pre-training of Word Embeddings for Dependency Parsing",
+    author = "Kanerva, Jenna  and
+      Luotolahti, Juhani  and
+      Ginter, Filip",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3012",
+    doi = "10.18653/v1/K17-3012",
+    pages = "119--125",
+}
+@inproceedings{yu-etal-2017-parse,
+    title = "The parse is darc and full of errors: Universal dependency parsing with transition-based and graph-based algorithms",
+    author = "Yu, Kuan  and
+      Sofroniev, Pavel  and
+      Schill, Erik  and
+      Hinrichs, Erhard",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3013",
+    doi = "10.18653/v1/K17-3013",
+    pages = "126--133",
+}
+@inproceedings{nguyen-etal-2017-novel,
+    title = "A Novel Neural Network Model for Joint {POS} Tagging and Graph-based Dependency Parsing",
+    author = "Nguyen, Dat Quoc  and
+      Dras, Mark  and
+      Johnson, Mark",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3014",
+    doi = "10.18653/v1/K17-3014",
+    pages = "134--142",
+}
+@inproceedings{qian-liu-2017-non,
+    title = "A non-{DNN} Feature Engineering Approach to Dependency Parsing {--} {FBAML} at {C}o{NLL} 2017 Shared Task",
+    author = "Qian, Xian  and
+      Liu, Yang",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3015",
+    doi = "10.18653/v1/K17-3015",
+    pages = "143--151",
+}
+@inproceedings{vilares-gomez-rodriguez-2017-non,
+    title = "A non-projective greedy dependency parser with bidirectional {LSTM}s",
+    author = "Vilares, David  and
+      G{\'o}mez-Rodr{\'\i}guez, Carlos",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3016",
+    doi = "10.18653/v1/K17-3016",
+    pages = "152--162",
+}
+@inproceedings{aufrant-etal-2017-limsi,
+    title = "LIMSI@CoNLL{'}17: UD Shared Task",
+    author = "Aufrant, Lauriane  and
+      Wisniewski, Guillaume  and
+      Yvon, Fran{\c{c}}ois",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3017",
+    doi = "10.18653/v1/K17-3017",
+    pages = "163--173",
+}
+@inproceedings{dumitrescu-etal-2017-racais,
+    title = "{RACAI}{'}s Natural Language Processing pipeline for Universal Dependencies",
+    author = "Dumitrescu, Stefan Daniel  and
+      Boros, Tiberiu  and
+      Tufis, Dan",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3018",
+    doi = "10.18653/v1/K17-3018",
+    pages = "174--181",
+}
+@inproceedings{das-etal-2017-delexicalized,
+    title = "Delexicalized transfer parsing for low-resource languages using transformed and combined treebanks",
+    author = "Das, Ayan  and
+      Zaffar, Affan  and
+      Sarkar, Sudeshna",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3019",
+    doi = "10.18653/v1/K17-3019",
+    pages = "182--190",
+}
+@inproceedings{wang-etal-2017-transition,
+    title = "A Transition-based System for Universal Dependency Parsing",
+    author = "Wang, Hao  and
+      Zhao, Hai  and
+      Zhang, Zhisong",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3020",
+    doi = "10.18653/v1/K17-3020",
+    pages = "191--197",
+}
+@inproceedings{hornby-etal-2017-corpus,
+    title = "Corpus Selection Approaches for Multilingual Parsing from Raw Text to Universal Dependencies",
+    author = "Hornby, Ryan  and
+      Taylor, Clark  and
+      Park, Jungyeul",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3021",
+    doi = "10.18653/v1/K17-3021",
+    pages = "198--206",
+}
+@inproceedings{de-lhoneux-etal-2017-raw,
+    title = "From Raw Text to Universal Dependencies - Look, No Tags!",
+    author = "de Lhoneux, Miryam  and
+      Shao, Yan  and
+      Basirat, Ali  and
+      Kiperwasser, Eliyahu  and
+      Stymne, Sara  and
+      Goldberg, Yoav  and
+      Nivre, Joakim",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3022",
+    doi = "10.18653/v1/K17-3022",
+    pages = "207--217",
+}
+@inproceedings{akkus-etal-2017-initial,
+    title = "Initial Explorations of {CCG} Supertagging for Universal Dependency Parsing",
+    author = "Akkus, Burak Kerim  and
+      Azizoglu, Heval  and
+      Cakici, Ruket",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3023",
+    doi = "10.18653/v1/K17-3023",
+    pages = "218--227",
+}
+@inproceedings{moor-etal-2017-clcl,
+    title = "{CLCL} (Geneva) {DINN} Parser: a Neural Network Dependency Parser Ten Years Later",
+    author = "Moor, Christophe  and
+      Merlo, Paola  and
+      Henderson, James  and
+      Wang, Haozhou",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3024",
+    doi = "10.18653/v1/K17-3024",
+    pages = "228--236",
+}
+@inproceedings{ji-etal-2017-fast,
+    title = "A Fast and Lightweight System for Multilingual Dependency Parsing",
+    author = "Ji, Tao  and
+      Wu, Yuanbin  and
+      Lan, Man",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3025",
+    doi = "10.18653/v1/K17-3025",
+    pages = "237--242",
+}
+@inproceedings{de-la-clergerie-etal-2017-parisnlp,
+    title = "The {P}aris{NLP} entry at the {C}on{LL} {UD} Shared Task 2017: A Tale of a {\#}{P}arsing{T}ragedy",
+    author = "de La Clergerie, {\'E}ric  and
+      Sagot, Beno{\^\i}t  and
+      Seddah, Djam{\'e}",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3026",
+    doi = "10.18653/v1/K17-3026",
+    pages = "243--252",
+}
+@inproceedings{more-tsarfaty-2017-universal,
+    title = "Universal Joint Morph-Syntactic Processing: The Open University of {I}srael{'}s Submission to The {C}o{NLL} 2017 Shared Task",
+    author = "More, Amir  and
+      Tsarfaty, Reut",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3027",
+    doi = "10.18653/v1/K17-3027",
+    pages = "253--264",
+}
+@inproceedings{kanayama-etal-2017-semi,
+    title = "A Semi-universal Pipelined Approach to the {C}o{NLL} 2017 {UD} Shared Task",
+    author = "Kanayama, Hiroshi  and
+      Muraoka, Masayasu  and
+      Yoshikawa, Katsumasa",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3028",
+    doi = "10.18653/v1/K17-3028",
+    pages = "265--273",
+}
+@inproceedings{garcia-gamallo-2017-rule,
+    title = "A rule-based system for cross-lingual parsing of Romance languages with Universal Dependencies",
+    author = "Garcia, Marcos  and
+      Gamallo, Pablo",
+    booktitle = "Proceedings of the {C}o{NLL} 2017 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies",
+    month = aug,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/K17-3029",
+    doi = "10.18653/v1/K17-3029",
+    pages = "274--282",
+}
