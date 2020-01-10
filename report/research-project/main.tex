@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 %\usepackage[margin=1.25in]{geometry}
 \usepackage{palatino}
+\usepackage{multirow}
 
 % Python Source Code
 \usepackage{tcolorbox}
@@ -246,13 +247,15 @@ Looking at the last 50 epochs for the semantic scores, it can actually be seen t
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{l|r|r|r|r}
-        Setting & \textbf{Syn Dev} & \textbf{Sem Dev} & \textbf{Syn Test} & \textbf{Sem Test} \\ \hline
-        Sem Only & o & 92.39\% & o & \textbf{87.50\%} \\ 
-        Multitask Raw & - & - & 90.92\% & \textbf{87.80\%} \\
-        Multitask Single & 94.64\% & 92.6\% & 90.81\% & 87.41\% \\
-        Multitask Multi & - & - & 7.39\% & 87.71\% \\
-        Multitask Loop & 94.29\% & 92.51\% & 90.96\% & \textbf{87.87\%} \\
+    \begin{tabular}{l|r|r|r|r|r|r}
+        %a & \multicolumn{4}{c}{Var} & \multicolumn{2}{c}{Var}
+         & \multicolumn{4}{c}{In-Domain} & \multicolumn{2}{c}{Out-Of-Domain} \\ \hline
+        Setting & \textbf{Syn Dev} & \textbf{Sem Dev} & \textbf{Syn Test} & \textbf{Sem Test} & \textbf{Syn Test} & \textbf{Syn Test} \\ \hline
+        Sem Only & o & 92.68\% &o & 92.39\% & o & \textbf{87.50\%} \\ 
+        Multitask Raw & 94.54\% & 92.90\% & - & - & 90.92\% & \textbf{87.80\%} \\
+        Multitask Single & 94.27\% & 92.54\% & 94.64\% & 92.60\% & 90.81\% & 87.41\% \\
+        Multitask Multi & 6.52\% & 92.64\% & - & - & 7.39\% & 87.71\% \\
+        Multitask Loop & 94.42\% & 93.01\% & 94.29\% & 92.51\% & 90.96\% & \textbf{87.87\%} \\
     \end{tabular}
     \caption{$F_1$ scores for the different setups.}
     \label{tab:results}
