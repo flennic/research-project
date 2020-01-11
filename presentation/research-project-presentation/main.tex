@@ -65,7 +65,7 @@
                 \textbf{Semantic Only} & \textbf{Gold Syntax} & \textbf{Predicted Syntax} \\ \hline
                 87.40\% & 90.90\% & 89.30\% \\ 
             \end{tabular}
-            \caption{Semantic $F_1$ scores, test, out-of-domain.}
+            \caption{Semantic $F_1$ scores for test, out-of-domain.\hspace{\textwidth}\textbf{Source:} \cite{kurtz-etal-2019-improving}}
             \label{tab:pre_results}
         \end{table}
     \end{frame}
@@ -978,7 +978,7 @@
     \end{frame}
     
     % Syntax 50 epochs
-    \begin{frame}{Multitask Learning}
+    \begin{frame}{Results | Multitask Learning}
     \begin{tikzpicture}
       \begin{axis}[
       title = Syntactic $F_1$ Scores (last 50 epochs),
@@ -1206,7 +1206,7 @@
     \end{frame}
     
     % Syntax 50 epochs without syn_dev_multi
-    \begin{frame}{Multitask Learning}
+    \begin{frame}{Results | Multitask Learning}
     \begin{tikzpicture}
       \begin{axis}[
       title = Syntactic $F_1$ Scores (last 50 epochs\, without Syn Dev Multi),
@@ -2695,7 +2695,7 @@
     \end{tikzpicture}
     \end{frame}
     
-    \begin{frame}{Results | Results}
+    \begin{frame}{Results | Multitask Learning - Research Projects}
        \begin{table}[h]
             \scriptsize
             \centering
@@ -2713,13 +2713,31 @@
         \end{table}
     \end{frame}
     
+       \begin{frame}{Results | Multitask Learning - Comparison}
+       \begin{table}[h]
+            \small
+            \centering
+            \begin{tabular}{l|r|r}
+            & \multicolumn{2}{c}{Sem Test} \\ \hline
+                 Source & In-Domain & Out-Of-Domain \\ \hline
+                 Research Project & 92.60\% & 87.87\% \\
+                 \cite{kurtz-etal-2019-improving} & 92.20\% & 89.30\% \\
+                 \cite{lindemann2019compositional} GloVe & 90.40\% & 84.30\% \\
+                 \cite{lindemann2019compositional} BERT \& GloVe & 93.90\% & 90.30\% \\
+                 \cite{lindemann2019compositional} MTL & 94.10\% & \textbf{90.50\%} \\
+            \end{tabular}
+            \caption{Semantic test $F_1$ scores from different authors.}
+            \label{tab:results_comparisson}
+        \end{table}
+    \end{frame}
+    
     
     \section{Outlook}
     \begin{frame}{Outlook}
         \begin{itemize}
-    		\item Presumption by \cite{kurtz-etal-2019-improving} confirmed, at least for this data set
-    		\item Bidirectional Encoder  Representations  from  Transformers  (BERT)  
-    		\item Combine BERT and multitask learning 
+    		\item Presumption by \cite{kurtz-etal-2019-improving} mostly confirmed, at least for this data set
+    		\item Bidirectional Encoder Representations from Transformers (BERT)  
+    		\item Combine BERT and multitask learning
     	\end{itemize}
     \end{frame}
     
