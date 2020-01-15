@@ -27,7 +27,6 @@
 \definecolor{custom_four}{HTML}{4f372d}
 \definecolor{custom_five}{HTML}{00a0b0}
 
-
 \title{Investigating the Impact of Syntactic Features for Semantic Dependency Parsing}
 \date{\today}
 \author{Maximilian Pfundstein}
@@ -48,8 +47,19 @@
         \begin{itemize}
             \item Syntactic and \alert{S}emantic \alert{D}ependency \alert{P}arsing (SDP)
             \item Acyclic Graphs
-            \item Research Question: To what extend does predicted syntax help for semantic dependency parsing?
+            \item Research Question: To which extend does predicted syntax help for semantic dependency parsing?
         \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{Introduction | SDP}
+        \begin{figure}[hbt]
+        	\center
+        	\includegraphics[width=1.0\textwidth]{img/parsing_example}
+        	\caption{Syntactic tree from SpaCy.}
+ 
+        	\label{fig:syntax_tree}
+        \end{figure}
+        \textbf{Source:} \url{https://towardsdatascience.com/getting-to-grips-with-parse-trees-6e19e7cd3c3c}
     \end{frame}
     
     \begin{frame}{Introduction | Previous Results}
@@ -122,6 +132,23 @@
     \end{frame}
     
     \section{Results}
+    
+    \begin{frame}{Results | \texttt{.conllu}}
+    \begin{itemize}
+        \item Open-Source library CoNNL-U Parser
+        \begin{itemize}
+            \item \url{https://github.com/EmilStenstrom/conllu}
+        \end{itemize}
+        \item Now supports capitalised labels
+        \item Fallback parser for meta information
+        \begin{itemize}
+            \item \texttt{.conllu} files have been adjusted
+            \item \texttt{\#12345} $\rightarrow$ \texttt{\# sent-id = 12345}
+        \end{itemize}
+    \end{itemize}
+        
+    \end{frame}{}
+    
     \begin{frame}{Results | Performance Improvement}
         \begin{tikzpicture}
           \begin{axis}[title = Function \texttt{parse\_conllu\_...},
